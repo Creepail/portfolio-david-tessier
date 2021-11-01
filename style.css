@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*
+<div class="project_box">
+
+<div class="proj">
+    <h1>Name of the project</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate incidunt voluptates inventore neque, nemo quidem delectus iusto quod aliquam id ex laborum iste totam eaque ipsa consequuntur voluptas fuga. Rerum.</p>
+</div>
+<div class="proj_img"></div>
+
+</div> */
 * {
   margin: 0;
   padding: 0;
@@ -77,7 +87,7 @@ body {
     background-color: #ae2012;
     grid-row: 1/-1;
     grid-column: 3/3;
-    background: url("moi.jpg");
+    background: url("img/moi.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 100px; }
@@ -99,21 +109,20 @@ body {
     align-items: center;
     border-radius: 50px; }
     .presentation .presentation_title h1 {
-      color: white;
       font-weight: bold; }
   .presentation .presentation_desc {
-    background-color: #ae2012;
     grid-row: 2/2;
     grid-column: 2/2;
     position: relative;
     z-index: -1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50px; }
+    align-items: center; }
     .presentation .presentation_desc p {
-      font-size: 30px;
-      color: white;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #ae2012;
+      font-size: 20px;
       text-align: center;
       font-weight: lighter; }
 
@@ -121,7 +130,7 @@ body {
   height: 800px;
   width: 100%;
   margin-top: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   display: grid;
   grid-template-rows: 10% 35% 51%;
   grid-template-columns: 1% 49% 31% 1%;
@@ -173,21 +182,20 @@ body {
     align-items: center;
     border-radius: 50px; }
     .project .project_title h1 {
-      color: white;
       font-weight: bold; }
   .project .project_desc {
-    background-color: #ae2012;
     grid-row: 2/2;
     grid-column: 3/3;
     position: relative;
     z-index: -1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50px; }
+    align-items: center; }
     .project .project_desc p {
-      font-size: 30px;
-      color: white;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #ae2012;
+      font-size: 20px;
       text-align: center;
       font-weight: lighter; }
 
@@ -275,5 +283,90 @@ body {
       background-color: #ae2012;
       padding: 10px 10px 10px 10px;
       border-radius: 20px; }
+
+.project_container {
+  margin-top: 100px;
+  height: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 15px; }
+  .project_container > div:hover {
+    opacity: 100%;
+    cursor: pointer; }
+  .project_container .project1 {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    background-image: url("img/umbry.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%; }
+  .project_container .project2 {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    background-image: url("img/Hermès-voyageur de l'espage.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%; }
+  .project_container .project3 {
+    grid-row: 1/1;
+    grid-column: 3/3;
+    background-image: url("img/showreel.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%; }
+  .project_container .project4 {
+    grid-row: 1/1;
+    grid-column: 4/4;
+    background-image: url("img/Tessier_David_Groupe08_Visuel01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%; }
+
+.project_focus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 500px;
+  margin-bottom: 189px; }
+  .project_focus .pro_img1 {
+    background-image: url("img/umbry.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    opacity: 100%; }
+  .project_focus .pro_img2 {
+    background-image: url("img/Hermès-voyageur de l'espage.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    opacity: 100%; }
+  .project_focus .pro_img3 {
+    background-image: url("img/showreel.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    opacity: 100%; }
+  .project_focus .pro_img4 {
+    background-image: url("img/Bad_Original.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    opacity: 100%; }
+  .project_focus .pro_img4:hover {
+    background-image: url("img/Tessier_David_Groupe08_Visuel01.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+    opacity: 100%; }
+
+.iframe_container {
+  height: 770;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px; }
 
 /*# sourceMappingURL=style.css.map */
